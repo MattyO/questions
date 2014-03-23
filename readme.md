@@ -51,7 +51,7 @@ Other solutions may include
 1. Use [bytearray](http://docs.python.org/3.1/library/functions.html#bytearray) in place of strings throughout the program.  I didn't know if this puts the solution outside of the requirements specified.
 2. Skip _in place_ requirement and allow new string objects to be returned.  
 
-The side-effectly nature of a in place solution would make me think twice about implementing it in a larger system.  The C / python makes it hard to maintain and much more prone to errors.  If a performance gain is the driving influence I would recommend looking for other lower-fruit kind of places.  
+The side-effectly nature of a in place solution would make me think twice about implementing it in a larger system.  The C / cython makes it hard to maintain and is much more prone to errors.  If a performance gain is the driving influence I would recommend looking for other lower-fruit kind of places.  
 
 
 Q5 - Spiral printing
