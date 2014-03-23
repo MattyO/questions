@@ -44,7 +44,7 @@ command.py uses the canswer solution
 
 The in place requirement makes this solution a little more complicated.  The immutable nature of strings require us to drop down to C where we can treat strings as a character array.  
 
-A pure python solutions is given in answers.py in the q4 folder.  This answer may not achieve the requirement of _in place_.  Another solution which is implemented in python is found in the file canswer.pyx
+A pure python solutions is given in answers.py in the q4 folder.  This answer may not achieve the requirement of _in place_.  Another solution which is implemented in cython is found in the file canswer.pyx
 
 Other solutions may include 
 
