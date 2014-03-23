@@ -29,7 +29,6 @@ class Position:
 
 
     def apply_offset(self, offset):
-        #print dir(offset)
         new_x, new_y = [sum(corr) for corr in zip((self.x, self.y), offset)]
         return Position(new_x, new_y)
 
@@ -46,7 +45,6 @@ class Grid:
 
     def next_position(self, current_position, direction):
         next_position = current_position.apply_offset(direction.offset)
-        #print str(next_position.x) + " " + str(next_position.y) 
         return self.get_position(next_position)
 
 def enumerate_clockwise(grid):
@@ -66,9 +64,7 @@ def enumerate_clockwise(grid):
 def create_grid(string_from_file):
     the_grid = Grid()
     for row_num, row in enumerate(string_from_file.split("\n")):
-        #print row
         for col_num, value in enumerate(row.split(" ")):
-            #print "value : " + str(value)
             the_grid.cells.append(Position(col_num, row_num, str(value)))
 
     return the_grid
