@@ -30,6 +30,8 @@ Requires Sympy
 
 Uses the [solve](http://docs.sympy.org/dev/modules/solvers/solvers.html#sympy.solvers.solvers.solve) function to make the system of equation more explicate and easier to understand.  
 
+From an engineering and user experience perspective using [shapely](https://pypi.python.org/pypi/Shapely) and providing a visual solutions would probibly be more useful.  Shapely however can only describe circles as LinearRings that are made up of a collection of points.  Solutions may not exist if rings come to a single perfect mathamatical intersection and solutions for two points will not be an exact mathamatical solution.  But an approximate visual solution is probibly better for the use case of finding things in a coordinate system.  Approximate visual solutions would also guard against error in distances measured(close points are better than no points).  Shapely would allow for overlay of maps and other contextual data.
+
 Q3 - Following the pointers
 ----
 Reduces pointer links to their simplest form. a->b->c can be reduced to a->c.  Then checks for circular pointers.  Reduce a->b->c->a  and checks for to a->a 
