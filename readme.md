@@ -20,6 +20,7 @@ Install
 3. follow run directions above
 
 ####Requirements
+* tested under python 2.7
 * sympy
 * cython
  
