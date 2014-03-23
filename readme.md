@@ -15,10 +15,12 @@ To test run the command
 Install
 ----
 1. Create virtualenv
+2. activate virtualenv
 2. install requirements.txt
 3. follow run directions above
 
 ####Requirements
+* tested under python 2.7
 * sympy
 * cython
  
