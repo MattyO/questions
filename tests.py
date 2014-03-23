@@ -125,19 +125,19 @@ class QOneTests(TestCase):
 
 class QThreeTests(TestCase):
     def test_flatten_chains_two_pointer_sets(self):
-        self.assertEqual(len(q3.flatten_chains('7,2,3,4,5,6,-1,0')), 2)
+        self.assertEqual(len(q3.flatten_chains([7,2,3,4,5,6,-1,0])), 2)
 
     def test_flatten_chains_three_pointer_sets(self):
-        self.assertEqual(len(q3.flatten_chains('7,2,2,4,5,6,-1,0')), 3)
+        self.assertEqual(len(q3.flatten_chains([7,2,2,4,5,6,-1,0])), 3)
 
     def test_flatten_chains_cycles(self):
-        self.assertEqual(q3.number_cycles(q3.flatten_chains('7,2,3,4,5,6,-1,0')), 1)
+        self.assertEqual(q3.number_cycles(q3.flatten_chains([7,2,3,4,5,6,-1,0])), 1)
 
     def test_full_solution(self):
-        self.assertEqual(q3.number_cycles(q3.flatten_chains('7,2,3,4,5,6,-1,0')), 1)
+        self.assertEqual(q3.number_cycles(q3.flatten_chains([7,2,3,4,5,6,-1,0])), 1)
 
     def test_full_solution_with_double_tail(self):
-        self.assertEqual(q3.number_cycles(q3.flatten_chains('7,2,2,4,5,6,-1,0')), 1)
+        self.assertEqual(q3.number_cycles(q3.flatten_chains([7,2,2,4,5,6,-1,0])), 1)
 
 #class QSixTests(TestCase):
 #    def test_node_crooked_tree_has_one_child(self):

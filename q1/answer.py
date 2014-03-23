@@ -1,7 +1,7 @@
-from sympy.abc import x, y
-from sympy.solvers import solve
 import math
 from collections import namedtuple
+from sympy.abc import x, y
+from sympy.solvers import solve
 
 Reading = namedtuple("Reading", ['x', 'y', 'distance'])
 

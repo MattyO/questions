@@ -15,7 +15,7 @@
 #6,0 | 
 
 def flatten_chains(node_list):
-    node_list = node_list.split(',')
+    node_list = node_list
     node_list.pop(0)
 
     node_list = [(str(head), str(int(tail))) for head, tail in enumerate(node_list) ]
