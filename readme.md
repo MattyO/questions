@@ -28,17 +28,23 @@ Install
 ----
 Requires Sympy
 
+Given two points with radi find the intercection of the resulting circles.  
+
 Uses the [solve](http://docs.sympy.org/dev/modules/solvers/solvers.html#sympy.solvers.solvers.solve) function to make the system of equation more explicate and easier to understand.  
 
 From an engineering and user experience perspective using [shapely](https://pypi.python.org/pypi/Shapely) and providing a visual solutions would probibly be more useful.  Shapely however can only describe circles as LinearRings that are made up of a collection of points.  Solutions may not exist if rings come to a single perfect mathamatical intersection and solutions for two points will not be an exact mathamatical solution.  But an approximate visual solution is probibly better for the use case of finding things in a coordinate system.  Approximate visual solutions would also guard against error in distances measured(close points are better than no points).  Shapely would allow for overlay of maps and other contextual data.
 
 Q3 - Following the pointers
 ----
+Given a list of pointers find how many cycles(where a pointers eventually points back to itself) there are.  
+
 Reduces pointer links to their simplest form. a->b->c can be reduced to a->c.  Then checks for circular pointers.  Reduce a->b->c->a  and checks for to a->a 
 
 Q4 - String manipulation
 ----
 Requires cython for canswer.py
+
+Replace concecative letters and spaces in a string __in place__
 
 command.py uses the canswer solution
 
@@ -56,6 +62,14 @@ The side-effectly nature of a in place solution would make me think twice about 
 
 Q5 - Spiral printing
 ----
+Print a two dimensional array in a clockwise spiral to its center
+
+1 2 3
+4 5 6
+7 8 9
+
+prints to 1 2 3 6 9 8 7 4 5
+
 Turned into a decent OO based solution.  
 
 The enumerate functions returns a generator for performance and consistency with the standard enumerate stdlib function.  Use with care as it is prone to the constraints of all other python generators.
